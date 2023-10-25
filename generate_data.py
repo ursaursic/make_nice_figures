@@ -6,13 +6,13 @@ import numpy as np
 
 def simple_sin_plot(N, omega, noise):
     x = np.linspace(0, 100, N)
-    y = np.sin(omega*x) + noise*np.random.random(N)
+    y = np.sin(omega*x) + noise*np.random.uniform(-1, 1, N)
     return x, y
 
 
 def simple_exp_plot_data(N, k, noise):
     x = np.linspace(0, 100, N)
-    y = np.exp(-x/k) + noise*np.random.random(N)
+    y = np.exp(-x/k) + noise*np.random.uniform(-1, 1, N)
     return x, y
 
 def simple_histogram_data(N):

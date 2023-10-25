@@ -3,13 +3,13 @@
 ### LINES
 # See http://matplotlib.sourceforge.net/api/artist_api.html#module-matplotlib.lines for more
 # information on line properties.
-lines.linewidth   : 2.0     # line width in points
-lines.linestyle   : -       # solid line
+lines.linewidth   : 1.4     # line width in points
+lines.linestyle   : -       # 
 # lines.color       : purple
 lines.marker      : o    # the default marker
 lines.markeredgewidth  : 0.5     # the line width around the marker symbol
-lines.markeredgecolor : 515151    # marker edge color
-lines.markersize  : 4            # markersize, in points
+# lines.markeredgecolor : 515151    # marker edge color
+lines.markersize  : 2            # markersize, in points
 #lines.dash_joinstyle : miter        # miter|round|bevel
 #lines.dash_capstyle : butt          # butt|round|projecting
 #lines.solid_joinstyle : miter       # miter|round|bevel
@@ -84,7 +84,7 @@ font.sans-serif     : Bitstream Vera Sans, Lucida Grande, Verdana, Geneva, Lucid
 # http://matplotlib.sourceforge.net/api/artist_api.html#module-matplotlib.text for more
 # information on text properties
 
-#text.color          : black
+text.color          : black
 
 ### LaTeX customizations. See http://www.scipy.org/Wiki/Cookbook/Matplotlib/UsingTex
 #text.usetex         : False  # use latex for all text handling. The following fonts
@@ -156,21 +156,23 @@ font.sans-serif     : Bitstream Vera Sans, Lucida Grande, Verdana, Geneva, Lucid
 # default fontsizes for ticklabels, and so on.  See
 # http://matplotlib.sourceforge.net/api/axes_api.html#module-matplotlib.axes
 #axes.hold           : True    # whether to clear the axes by default on
-axes.facecolor      : FAFAFA   # axes background color
-axes.edgecolor      : BCBCBC   # axes edge color
+axes.facecolor      : FFFFFF   # axes background color
+axes.edgecolor      : BCBCBC75   # axes edge color
+axes.spines.right: False    # top edge
+axes.spines.top: False      # right edge
 axes.linewidth      : 1        # edge linewidth
-axes.grid           : True     # display grid or not
+axes.grid           : False     # display grid or not
 axes.titlesize      : x-large  # fontsize of the axes title
 axes.labelsize      : large    # fontsize of the x any y labels
-axes.labelcolor     : 555555
+axes.labelcolor     : 000000
 axes.axisbelow      : True     # whether axis gridlines and ticks are below
                                # the axes elements (lines, text, etc)
 #axes.formatter.limits : -7, 7 # use scientific notation if log10
                                # of the axis range is smaller than the
                                # first or larger than the second
-#axes.unicode_minus  : True    # use unicode for the minus symbol
+axes.unicode_minus  : True    # use unicode for the minus symbol
                                # rather than hypen.  See http://en.wikipedia.org/wiki/Plus_sign#Plus_sign
-axes.prop_cycle : cycler('color', ['528B8B', '79CDCD', 'CD853F', 'FFA54F', '698B69', '9BCD9B'])
+axes.prop_cycle : cycler('color', ['0072B2', '009E73', 'D55E00', 'CC79A7', 'F0E442', '56B4E9']
 
 axes.xmargin        : 0.005  # x margin.  See `axes.Axes.margins`
 axes.ymargin        : 0.01  # y margin See `axes.Axes.margins`
@@ -178,12 +180,12 @@ axes.ymargin        : 0.01  # y margin See `axes.Axes.margins`
 #polaraxes.grid      : True    # display grid on polar axes
 #axes3d.grid         : True    # display grid on 3d axes
 
-errorbar.capsize : 3
+errorbar.capsize : 0
 
 
 ### TICKS
 # see http://matplotlib.sourceforge.net/api/axis_api.html#matplotlib.axis.Tick
-xtick.major.size     : 0      # major tick size in points
+xtick.major.size     : 3      # major tick size in points
 xtick.minor.size     : 0      # minor tick size in points
 xtick.major.pad      : 6      # distance to major tick label in points
 xtick.minor.pad      : 6      # distance to the minor tick label in points
@@ -191,7 +193,7 @@ xtick.color          : 555555      # color of the tick labels
 #xtick.labelsize      : medium # fontsize of the tick labels
 xtick.direction      : in     # direction: in or out
 
-ytick.major.size     : 0      # major tick size in points
+ytick.major.size     : 3      # major tick size in points
 ytick.minor.size     : 0      # minor tick size in points
 ytick.major.pad      : 6      # distance to major tick label in points
 ytick.minor.pad      : 6      # distance to the minor tick label in points
@@ -223,7 +225,7 @@ legend.fancybox      : True  # if True, use a rounded box for the
 
 ### FIGURE
 # See http://matplotlib.sourceforge.net/api/figure_api.html#matplotlib.figure.Figure
-figure.figsize   : 8, 6    # figure size in inches
+figure.figsize   : 4, 3    # figure size in inches
 #figure.dpi       : 80      # figure dots per inch
 figure.facecolor : 1    # figure facecolor; 0.75 is scalar gray
 figure.edgecolor : 1   # figure edgecolor
@@ -273,7 +275,7 @@ figure.subplot.hspace  : 0.5    # the amount of height reserved for white space 
 # the default savefig params can be different from the display params
 # Eg, you may want a higher resolution, or to make the figure
 # background white
-#savefig.dpi       : 100      # figure dots per inch
+savefig.dpi       : 300      # figure dots per inch
 #savefig.facecolor : white    # figure facecolor when saving
 #savefig.edgecolor : white    # figure edgecolor when saving
 #savefig.extension : auto     # what extension to use for savefig('foo'), or 'auto'
