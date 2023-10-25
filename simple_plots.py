@@ -1,13 +1,6 @@
 # This file is a template for simple plots
 # Ursa Ursic, Apr 2023
 
-import matplotlib.pyplot as plt
-from generate_data import *
-
-
-style = './mynewstyle.mplstyle'
-plt.style.use(style)
-
 
 def main():
     # Define data to plot
