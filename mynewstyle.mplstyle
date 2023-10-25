@@ -74,7 +74,7 @@ font.family          : sans-serif
 # small, medium, large, x-large, xx-large, larger, or smaller
 font.size           : 10.0
 # font.serif          : Bitstream Vera Serif, New Century Schoolbook, Century Schoolbook L, Utopia, ITC Bookman, Bookman, Nimbus Roman No9 L, Times New Roman, Times, Palatino, Charter, serif
-font.sans-serif     : Bitstream Vera Sans, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif
+font.sans-serif     : Helvetica, Bitstream Vera Sans, Lucida Grande, Verdana, Geneva, Lucid, Arial, Avant Garde, sans-serif
 #font.cursive        : Apple Chancery, Textile, Zapf Chancery, Sand, cursive
 #font.fantasy        : Comic Sans MS, Chicago, Charcoal, Impact, Western, fantasy
 #font.monospace      : Andale Mono, Nimbus Mono L, Courier New, Courier, Fixed, Terminal, monospace
@@ -157,13 +157,13 @@ text.color          : black
 # http://matplotlib.sourceforge.net/api/axes_api.html#module-matplotlib.axes
 #axes.hold           : True    # whether to clear the axes by default on
 axes.facecolor      : FFFFFF   # axes background color
-axes.edgecolor      : BCBCBC75   # axes edge color
-axes.spines.right: False    # top edge
-axes.spines.top: False      # right edge
-axes.linewidth      : 1        # edge linewidth
+axes.edgecolor      : 000000   # axes edge color
+axes.spines.right: True    # top edge
+axes.spines.top: True      # right edge
+axes.linewidth      : 0.5        # edge linewidth
 axes.grid           : False     # display grid or not
-axes.titlesize      : x-large  # fontsize of the axes title
-axes.labelsize      : large    # fontsize of the x any y labels
+axes.titlesize      : 20  # font size
+axes.labelsize      : 12    # fontsize of the x any y labels
 axes.labelcolor     : 000000
 axes.axisbelow      : True     # whether axis gridlines and ticks are below
                                # the axes elements (lines, text, etc)
@@ -187,18 +187,18 @@ errorbar.capsize : 0
 # see http://matplotlib.sourceforge.net/api/axis_api.html#matplotlib.axis.Tick
 xtick.major.size     : 3      # major tick size in points
 xtick.minor.size     : 0      # minor tick size in points
-xtick.major.pad      : 6      # distance to major tick label in points
-xtick.minor.pad      : 6      # distance to the minor tick label in points
-xtick.color          : 555555      # color of the tick labels
-#xtick.labelsize      : medium # fontsize of the tick labels
+xtick.major.pad      : 3      # distance to major tick label in points
+xtick.minor.pad      : 3      # distance to the minor tick label in points
+xtick.color          : 000000      # color of the tick labels
+xtick.labelsize      : 9 # fontsize of the tick labels
 xtick.direction      : in     # direction: in or out
 
 ytick.major.size     : 3      # major tick size in points
 ytick.minor.size     : 0      # minor tick size in points
-ytick.major.pad      : 6      # distance to major tick label in points
-ytick.minor.pad      : 6      # distance to the minor tick label in points
-ytick.color          : 555555      # color of the tick labels
-#ytick.labelsize      : medium # fontsize of the tick labels
+ytick.major.pad      : 3      # distance to major tick label in points
+ytick.minor.pad      : 3      # distance to the minor tick label in points
+ytick.color          : 000000      # color of the tick labels
+ytick.labelsize      : 9 # fontsize of the tick labels
 ytick.direction      : in     # direction: in or out
 
 
@@ -225,7 +225,7 @@ legend.fancybox      : True  # if True, use a rounded box for the
 
 ### FIGURE
 # See http://matplotlib.sourceforge.net/api/figure_api.html#matplotlib.figure.Figure
-figure.figsize   : 4, 3    # figure size in inches
+figure.figsize   : 3.5, 2.8    # figure size in inches
 #figure.dpi       : 80      # figure dots per inch
 figure.facecolor : 1    # figure facecolor; 0.75 is scalar gray
 figure.edgecolor : 1   # figure edgecolor
@@ -298,7 +298,7 @@ savefig.dpi       : 300      # figure dots per inch
 # pdf backend params
 #pdf.compression   : 6 # integer from 0 to 9
                        # 0 disables compression (good for debugging)
-#pdf.fonttype       : 3         # Output Type 3 (Type3) or Type 42 (TrueType)
+pdf.fonttype       : 42         # Output Type 3 (Type3) or Type 42 (TrueType)
 
 # svg backend params
 #svg.image_inline : True       # write raster image data directly into the svg file
